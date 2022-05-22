@@ -1,5 +1,6 @@
 class DiaryEntry
   def initialize(title, contents) # title, contents are strings
+    fail "Error: No title entered" if title == ""
     @title = title
     @contents = contents
     @begin_from = 0
